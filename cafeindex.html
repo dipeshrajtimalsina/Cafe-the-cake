@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café The Cake</title>
+  <style>
+    :root {
+      --primary: #e60000;
+      --secondary: #004aad;
+      --accent: #80c904;
+      --bg-light: #fefefe;
+      --bg-dark: #121212;
+      --text-light: #ffffff;
+      --text-dark: #000000;
+    }body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: white;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--secondary);
+  color: var(--text-light);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.section {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #333;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  margin-top: 1rem;
+}
+
+  </style>
+  <script>
+    window.onload = () => {
+      const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (isDark) {
+        document.body.classList.add('dark-mode');
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Café The Cake Logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section class="hero" id="home">
+    <h1>Welcome to Café The Cake</h1>
+    <p>It’s Time For A Delicious Treat.</p>
+  </section>  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+      Café The Cake, owned by Abiral Rimal, is located at Godawari Municipality-14,
+      Thaiba Dasghar (Near Nepal and Nabil Bank). We offer a delicious variety of
+      cakes and baked treats that bring joy to every occasion.
+    </p>
+  </section>  <section class="section" id="menu">
+    <h2>Our Menu (Price per Pound)</h2>
+    <table>
+      <tr><th>Product</th><th>Price</th></tr>
+      <tr><td>Vanilla</td><td>Rs. 500</td></tr>
+      <tr><td>Black Forest</td><td>Rs. 550</td></tr>
+      <tr><td>White Forest</td><td>Rs. 550</td></tr>
+      <tr><td>Chocolate</td><td>Rs. 750</td></tr>
+      <tr><td>Strawberry</td><td>Rs. 750</td></tr>
+      <tr><td>Blue Berry</td><td>Rs. 750</td></tr>
+      <tr><td>Mango</td><td>Rs. 750</td></tr>
+      <tr><td>Pineapple</td><td>Rs. 750</td></tr>
+      <tr><td>Choco Vanilla</td><td>Rs. 800</td></tr>
+      <tr><td>Chocochips</td><td>Rs. 850</td></tr>
+      <tr><td>Red Velvet</td><td>Rs. 850</td></tr>
+      <tr><td>Double Chocolate</td><td>Rs. 850</td></tr>
+      <tr><td>Chocolate Truffle</td><td>Rs. 850</td></tr>
+      <tr><td>Oreo Chocolate</td><td>Rs. 750</td></tr>
+      <tr><td>Mocha</td><td>Rs. 750</td></tr>
+      <tr><td>Opera</td><td>Rs. 750</td></tr>
+      <tr><td>Cheese Cake (All Fev)</td><td>Rs. 1200</td></tr>
+      <tr><td>Butter Scotch</td><td>Rs. 750</td></tr>
+    </table>
+    <p style="margin-top: 1rem;"><strong>Free Home Delivery Available!</strong></p>
+  </section>  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 9860124343, 9808133645</p>
+    <p>📍 Godawari Municipality-14, Thaiba Dasghar (Near Nepal and Nabil Bank)</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/cafethecake" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/cafethecake" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@cafethecake" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <iframe
+      src="https://www.google.com/maps?q=Godawari+Municipality-14,+Thaiba+Dasghar,+Lalitpur,+Nepal&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>  <footer>
+    <p>It’s Time For A Delicious Treat.</p>
+    <p>&copy; 2025 Café The Cake. All rights reserved.</p>
+  </footer>
+</body>
+</html>
